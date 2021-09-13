@@ -1,0 +1,30 @@
+public class greatestNumber{
+    public static int getLargestNumber(int[]a,int total){
+    int temp;
+    
+        for(int i=0;i<total;i++)
+        
+    {
+    for(int j=i+1;j<total;j++)
+    {
+        if(arr[i]>arr[j])
+    
+    {
+        temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+        
+        
+    }
+    }
+    return a[total-1];
+    public static void main(String args[])
+    {
+        int a[]={78,32,33,89,41};
+        System.out.println("gretaest is :"+getLargestNumber(a,5));
+        
+    }
+    
+}
+
